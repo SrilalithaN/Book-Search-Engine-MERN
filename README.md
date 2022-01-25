@@ -38,7 +38,7 @@
 ## Assets
  * The following is link to deployed code on github : https://github.com/SrilalithaN/Book-Search-Engine-MERN
 
- * The following is the link to deployed application on heroku:
+ * The following is the link to deployed application on heroku: [LINK TO APP](https://immense-river-48666.herokuapp.com/)
 
 
  * The following is the demo-video of the application: [DEMO](https://watch.screencastify.com/v/tWlZmq9EmqwEd61vSZy9)
