@@ -29,7 +29,48 @@ const SavedBooks = () => {
       console.error(error);
     }
   };
+// const SavedBooks = () => {
+//   const [userData, setUserData] = useState({});
+//   const userDataLength = Object.keys(userData).length;
 
+//   useEffect(() => {
+//     const getUser = async () => {
+//       try {
+//         const token = Auth.loggedIn() ? Auth.getToken() : null;
+
+//         if (!token) return false;
+//         const response = await GET_ME(token);
+
+//         if (!response.ok) {
+//           throw new Error('something went wrong!');
+//         }
+//         const user = await response.json();
+//         setUserData(user);
+//       } catch (err) {
+//         console.error(err);
+//       }
+//     };
+
+//     getUser();
+//   }, [userDataLength]);
+
+//   const handleDeleteBook = async (bookId) => {
+//     const token = Auth.loggedIn() ? Auth.getToken() : null;
+//     if (!token)  return false;
+
+//     try {
+//       const response = await REMOVE_BOOK(bookId, token);
+
+//       if (!response.ok) {
+//         throw new Error('something went wrong!');
+//       }
+//       const updatedUser = await response.json();
+//       setUserData(updatedUser);
+//       removeBookId(bookId);
+//     } catch (err) {
+//       console.error(err);
+//     }
+//   };
   // if data isn't here yet, show loading..
   if (loading) {
     return <h2>LOADING...</h2>;
